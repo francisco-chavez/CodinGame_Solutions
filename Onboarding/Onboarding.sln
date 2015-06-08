@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onboarding", "Onboarding.cs
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Easy", "Easy", "{23CD21A9-453A-4928-A18B-F2F47547FF49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Power of Thor", "..\Power of Thor\Power of Thor.csproj", "{1260E5AB-2C69-4E05-AF9D-AE9853CEFDE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +17,16 @@ Global
 		{C932DBC1-F10A-4047-8F40-F75FC8C8F585}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C932DBC1-F10A-4047-8F40-F75FC8C8F585}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C932DBC1-F10A-4047-8F40-F75FC8C8F585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1260E5AB-2C69-4E05-AF9D-AE9853CEFDE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1260E5AB-2C69-4E05-AF9D-AE9853CEFDE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1260E5AB-2C69-4E05-AF9D-AE9853CEFDE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1260E5AB-2C69-4E05-AF9D-AE9853CEFDE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C932DBC1-F10A-4047-8F40-F75FC8C8F585} = {23CD21A9-453A-4928-A18B-F2F47547FF49}
+		{1260E5AB-2C69-4E05-AF9D-AE9853CEFDE5} = {23CD21A9-453A-4928-A18B-F2F47547FF49}
 	EndGlobalSection
 EndGlobal
