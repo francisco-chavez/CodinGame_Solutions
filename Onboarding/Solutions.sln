@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Paranoid Android", "..\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heat Detector", "..\Heat Detector\Heat Detector.csproj", "{899A91B4-1AB1-4A6C-9E21-CB50E69ED0FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stock Exchange Losses", "..\Stock Exchange Losses\Stock Exchange Losses.csproj", "{1A8C97C2-28B9-4544-8A28-808E4B431206}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,10 @@ Global
 		{899A91B4-1AB1-4A6C-9E21-CB50E69ED0FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{899A91B4-1AB1-4A6C-9E21-CB50E69ED0FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{899A91B4-1AB1-4A6C-9E21-CB50E69ED0FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A8C97C2-28B9-4544-8A28-808E4B431206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A8C97C2-28B9-4544-8A28-808E4B431206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A8C97C2-28B9-4544-8A28-808E4B431206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A8C97C2-28B9-4544-8A28-808E4B431206}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,5 +120,6 @@ Global
 		{9186F233-2CC7-4FBA-8B23-2DE4ABD13DF8} = {9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}
 		{6795D935-55F6-4AA2-BD3E-BD063D92B2EA} = {9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}
 		{899A91B4-1AB1-4A6C-9E21-CB50E69ED0FE} = {9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}
+		{1A8C97C2-28B9-4544-8A28-808E4B431206} = {9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}
 	EndGlobalSection
 EndGlobal
