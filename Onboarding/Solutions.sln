@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Defibrillators", "..\Defibr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Horse_racing Duals", "..\Horse_racing Duals\Horse_racing Duals.csproj", "{111913A3-06C2-4F11-BFF2-6E622FEDD0C9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Medium", "Medium", "{9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skynet_ the Virus", "..\Skynet_ the Virus\Skynet_ the Virus.csproj", "{A53BDF07-A6EB-4FF6-99A5-13FFBC47F667}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,10 @@ Global
 		{111913A3-06C2-4F11-BFF2-6E622FEDD0C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{111913A3-06C2-4F11-BFF2-6E622FEDD0C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{111913A3-06C2-4F11-BFF2-6E622FEDD0C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A53BDF07-A6EB-4FF6-99A5-13FFBC47F667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A53BDF07-A6EB-4FF6-99A5-13FFBC47F667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A53BDF07-A6EB-4FF6-99A5-13FFBC47F667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A53BDF07-A6EB-4FF6-99A5-13FFBC47F667}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,5 +92,6 @@ Global
 		{D945BA17-0A7D-4F7B-A331-55EE20065682} = {23CD21A9-453A-4928-A18B-F2F47547FF49}
 		{3F4E6151-5E82-4C08-AEFF-8C087804C323} = {23CD21A9-453A-4928-A18B-F2F47547FF49}
 		{111913A3-06C2-4F11-BFF2-6E622FEDD0C9} = {23CD21A9-453A-4928-A18B-F2F47547FF49}
+		{A53BDF07-A6EB-4FF6-99A5-13FFBC47F667} = {9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}
 	EndGlobalSection
 EndGlobal
