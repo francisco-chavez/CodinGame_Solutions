@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dwarfs standing on the shou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Gift", "..\The Gift\The Gift.csproj", "{4B7863F9-9FF7-4B24-B3F1-F30604B0DBC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayan Calculation", "..\Mayan Calculation\Mayan Calculation.csproj", "{52778F92-A06E-4DFF-AAF3-7D3B240013E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -137,6 +139,10 @@ Global
 		{4B7863F9-9FF7-4B24-B3F1-F30604B0DBC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B7863F9-9FF7-4B24-B3F1-F30604B0DBC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B7863F9-9FF7-4B24-B3F1-F30604B0DBC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52778F92-A06E-4DFF-AAF3-7D3B240013E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52778F92-A06E-4DFF-AAF3-7D3B240013E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52778F92-A06E-4DFF-AAF3-7D3B240013E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52778F92-A06E-4DFF-AAF3-7D3B240013E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -163,5 +169,6 @@ Global
 		{6F262B11-CCBF-4274-89F5-1E780F39D1EA} = {9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}
 		{77D479E0-E16C-429F-9F02-6EE1ABE02C35} = {9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}
 		{4B7863F9-9FF7-4B24-B3F1-F30604B0DBC4} = {9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}
+		{52778F92-A06E-4DFF-AAF3-7D3B240013E6} = {9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}
 	EndGlobalSection
 EndGlobal
