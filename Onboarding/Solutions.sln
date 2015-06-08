@@ -49,6 +49,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Gift", "..\The Gift\The
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayan Calculation", "..\Mayan Calculation\Mayan Calculation.csproj", "{52778F92-A06E-4DFF-AAF3-7D3B240013E6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hard", "Hard", "{DFBA7BC9-D9C7-453D-A8C1-DC71201A6B6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skynet strikes back", "..\Skynet strikes back\Skynet strikes back.csproj", "{A91A3D53-DA7D-45B0-A3DB-9397B916BB9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -143,6 +147,10 @@ Global
 		{52778F92-A06E-4DFF-AAF3-7D3B240013E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52778F92-A06E-4DFF-AAF3-7D3B240013E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52778F92-A06E-4DFF-AAF3-7D3B240013E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A91A3D53-DA7D-45B0-A3DB-9397B916BB9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A91A3D53-DA7D-45B0-A3DB-9397B916BB9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A91A3D53-DA7D-45B0-A3DB-9397B916BB9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A91A3D53-DA7D-45B0-A3DB-9397B916BB9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -170,5 +178,6 @@ Global
 		{77D479E0-E16C-429F-9F02-6EE1ABE02C35} = {9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}
 		{4B7863F9-9FF7-4B24-B3F1-F30604B0DBC4} = {9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}
 		{52778F92-A06E-4DFF-AAF3-7D3B240013E6} = {9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}
+		{A91A3D53-DA7D-45B0-A3DB-9397B916BB9E} = {DFBA7BC9-D9C7-453D-A8C1-DC71201A6B6B}
 	EndGlobalSection
 EndGlobal
