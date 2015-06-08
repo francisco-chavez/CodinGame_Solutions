@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skynet_the Chasm", "..\Skyn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temperatures", "..\Temperatures\Temperatures.csproj", "{A0C1A72D-2CBA-4C9D-83E6-2510990AE793}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mars Lander _ Level 1", "..\Mars Lander _ Level 1\Mars Lander _ Level 1.csproj", "{BEB5BE84-A978-488F-AB44-B7F892526CF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A0C1A72D-2CBA-4C9D-83E6-2510990AE793}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0C1A72D-2CBA-4C9D-83E6-2510990AE793}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0C1A72D-2CBA-4C9D-83E6-2510990AE793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEB5BE84-A978-488F-AB44-B7F892526CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEB5BE84-A978-488F-AB44-B7F892526CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEB5BE84-A978-488F-AB44-B7F892526CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEB5BE84-A978-488F-AB44-B7F892526CF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,5 +55,6 @@ Global
 		{0BA80B95-43E5-4AED-9362-EF47E8A09C81} = {23CD21A9-453A-4928-A18B-F2F47547FF49}
 		{BCA9601E-AF61-4364-90C4-67D1B0C0B45C} = {23CD21A9-453A-4928-A18B-F2F47547FF49}
 		{A0C1A72D-2CBA-4C9D-83E6-2510990AE793} = {23CD21A9-453A-4928-A18B-F2F47547FF49}
+		{BEB5BE84-A978-488F-AB44-B7F892526CF1} = {23CD21A9-453A-4928-A18B-F2F47547FF49}
 	EndGlobalSection
 EndGlobal
