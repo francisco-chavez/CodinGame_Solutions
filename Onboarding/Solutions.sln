@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indiana _ Level 1", "..\Ind
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Network Cabling", "..\Network Cabling\Network Cabling.csproj", "{3640B920-BF92-4FE1-9646-CE7FDFEAACBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conway Sequence", "..\Conway Sequence\Conway Sequence.csproj", "{FE955505-8175-4C3E-8CEA-A56DE8AF034C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +115,10 @@ Global
 		{3640B920-BF92-4FE1-9646-CE7FDFEAACBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3640B920-BF92-4FE1-9646-CE7FDFEAACBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3640B920-BF92-4FE1-9646-CE7FDFEAACBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE955505-8175-4C3E-8CEA-A56DE8AF034C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE955505-8175-4C3E-8CEA-A56DE8AF034C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE955505-8175-4C3E-8CEA-A56DE8AF034C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE955505-8175-4C3E-8CEA-A56DE8AF034C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,5 +141,6 @@ Global
 		{1A8C97C2-28B9-4544-8A28-808E4B431206} = {9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}
 		{01B03E19-8FB8-47CA-834F-FAB200859658} = {9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}
 		{3640B920-BF92-4FE1-9646-CE7FDFEAACBF} = {9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}
+		{FE955505-8175-4C3E-8CEA-A56DE8AF034C} = {9A53ADA5-4E4B-4D7E-A442-4CE717A0DE1C}
 	EndGlobalSection
 EndGlobal
