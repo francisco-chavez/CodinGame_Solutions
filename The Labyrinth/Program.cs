@@ -73,7 +73,7 @@ class Player
 		int alarmCountDown	= int.Parse(inputs[2]); // number of rounds between the time the alarm countdown is activated and the time the alarm goes off.
 
 		// game loop
-		char[,] maze = new char[columnCount, rowCount];
+		char[,] maze = new char[rowCount, columnCount];
 
 		while (true)
 		{
