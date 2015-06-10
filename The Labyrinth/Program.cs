@@ -17,7 +17,17 @@ class Player
 {
 	static string FindNextMove(char[,] maze, CurrentMode searchMode, int x, int y, int w, int h)
 	{
-		throw new NotImplementedException();
+		switch (searchMode)
+		{
+		case CurrentMode.Heading:
+			return HeadsToControlRoom(maze, x, y, w, h);
+		case CurrentMode.Returning:
+			return ReturnToStartingPoint(maze, x, y, w, h);
+		case CurrentMode.Searching:
+			return LookForControlRoom(maze, x, y, w, h);
+		default:
+			throw new Exception("Unknown search mode entered");
+		}
 	}
 
 	static string LookForControlRoom(char[,] maze, int x, int y, int w, int h)
@@ -33,6 +43,25 @@ class Player
 	static string ReturnToStartingPoint(char[,] maze, int x, int y, int w, int h)
 	{
 		throw new NotImplementedException();
+	}
+
+	/// <summary>
+	/// Returns true if the location of the control room has been found. This is not
+	/// to be confused with the path to the control room.
+	/// </summary>
+	/// <param name="maze">The latest scan of the maze.</param>
+	/// <param name="w">The width of the maze.</param>
+	/// <param name="h">The height of the maze.</param>
+	/// <returns>
+	/// A boolean value telling you that the lastest scan shows the location of the control room.
+	/// </returns>
+	static bool ControlRoomFound(char[,] maze, int w, int h)
+	{
+		for (int i = 0; i < h; i++)
+			for (int j = 0; j < w; j++)
+				if (maze[i, j] == 'C')
+					return true;
+		return false;
 	}
 
 	static void Main(string[] args)
