@@ -15,15 +15,23 @@ public enum CurrentMode
 
 class Player
 {
-	static string FindNextMove(char[,] maze, CurrentMode searchMode, int x, int y, int w, int h)
+	static string FindNextMove(char[,] maze, ref CurrentMode searchMode, int x, int y, int w, int h)
 	{
 		switch (searchMode)
 		{
 		case CurrentMode.Heading:
 			return HeadsToControlRoom(maze, x, y, w, h);
+
 		case CurrentMode.Returning:
 			return ReturnToStartingPoint(maze, x, y, w, h);
+
 		case CurrentMode.Searching:
+			if (ControlRoomFound(maze, w, h))
+			{
+				searchMode = CurrentMode.Heading;
+				return HeadsToControlRoom(maze, x, y, w, h);
+			}
+
 			return LookForControlRoom(maze, x, y, w, h);
 		default:
 			throw new Exception("Unknown search mode entered");
@@ -74,6 +82,7 @@ class Player
 
 		// game loop
 		char[,] maze = new char[rowCount, columnCount];
+		CurrentMode searchMode = CurrentMode.Searching;
 
 		while (true)
 		{
@@ -96,8 +105,9 @@ class Player
 
 			// Write an action using Console.WriteLine()
 			// To debug: Console.Error.WriteLine("Debug messages...");
+			string nextMove = FindNextMove(maze, ref searchMode, currentColumn, currentRow, columnCount, rowCount);
 
-			Console.WriteLine("RIGHT"); // Kirk's next move (UP DOWN LEFT or RIGHT).
+			Console.WriteLine(nextMove); // Kirk's next move (UP DOWN LEFT or RIGHT).
 		}
 	}
 }
