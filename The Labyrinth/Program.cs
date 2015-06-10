@@ -5,12 +5,36 @@ using System.Text;
 using System.Collections;
 using System.Collections.Generic;
 
-/**
- * Auto-generated code below aims at helping you parse
- * the standard input according to the problem statement.
- **/
+
+public enum CurrentMode 
+{ 
+	Searching,	// Searching to the control room
+	Heading,	// Heading towards the control room (only posible if we know where it is)
+	Returning	// Returning to starting location
+}
+
 class Player
 {
+	static string FindNextMove(char[,] maze, CurrentMode searchMode, int x, int y, int w, int h)
+	{
+		throw new NotImplementedException();
+	}
+
+	static string LookForControlRoom(char[,] maze, int x, int y, int w, int h)
+	{
+		throw new NotImplementedException();
+	}
+
+	static string HeadsToControlRoom(char[,] maze, int x, int y, int w, int h)
+	{
+		throw new NotImplementedException();
+	}
+
+	static string ReturnToStartingPoint(char[,] maze, int x, int y, int w, int h)
+	{
+		throw new NotImplementedException();
+	}
+
 	static void Main(string[] args)
 	{
 		string[] inputs;
