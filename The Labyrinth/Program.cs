@@ -139,6 +139,7 @@ class Player
 		// game loop
 		char[,] maze = new char[rowCount, columnCount];
 		SearchMode searchMode = SearchMode.Searching;
+		UpdateCurrentStrategy(searchMode);
 
 		while (true)
 		{
