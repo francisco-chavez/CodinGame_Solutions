@@ -6,52 +6,38 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-public enum CurrentMode 
+#region Helpers
+public enum SearchMode 
 { 
-	Searching,	// Searching to the control room
+	Searching,	// Searching for the control room
 	Heading,	// Heading towards the control room (only posible if we know where it is)
 	Returning	// Returning to starting location
 }
 
-class Player
+public interface IStrategy
 {
-	static string FindNextMove(char[,] maze, ref CurrentMode searchMode, int x, int y, int w, int h)
-	{
-		switch (searchMode)
-		{
-		case CurrentMode.Heading:
-			return HeadsToControlRoom(maze, x, y, w, h);
+	SearchMode CurrentStrategyClassification { get; }
+	SearchMode StateNextStrategy(char[,] maze, SearchMode searchMode, int x, int y, int w, int h);
+	string FindNextMove(char[,] maze, int x, int y, int w, int h);
+}
 
-		case CurrentMode.Returning:
-			return ReturnToStartingPoint(maze, x, y, w, h);
-
-		case CurrentMode.Searching:
-			if (ControlRoomFound(maze, w, h))
-			{
-				searchMode = CurrentMode.Heading;
-				return HeadsToControlRoom(maze, x, y, w, h);
-			}
-
-			return LookForControlRoom(maze, x, y, w, h);
-		default:
-			throw new Exception("Unknown search mode entered");
-		}
-	}
-
-	static string LookForControlRoom(char[,] maze, int x, int y, int w, int h)
+class SearchClass
+	: IStrategy
+{
+	public string FindNextMove(char[,] maze, int x, int y, int w, int h)
 	{
 		throw new NotImplementedException();
 	}
 
-	static string HeadsToControlRoom(char[,] maze, int x, int y, int w, int h)
+	public SearchMode StateNextStrategy(char[,] maze, SearchMode searchMode, int x, int y, int w, int h)
 	{
-		throw new NotImplementedException();
+		if (ControlRoomFound(maze, w, h))
+			return SearchMode.Heading;
+		else
+			return CurrentStrategyClassification;
 	}
 
-	static string ReturnToStartingPoint(char[,] maze, int x, int y, int w, int h)
-	{
-		throw new NotImplementedException();
-	}
+	public SearchMode CurrentStrategyClassification { get { return SearchMode.Searching; } }
 
 	/// <summary>
 	/// Returns true if the location of the control room has been found. This is not
@@ -71,6 +57,76 @@ class Player
 					return true;
 		return false;
 	}
+}
+
+class ApproachClass
+	: IStrategy
+{
+	public SearchMode CurrentStrategyClassification
+	{
+		get { throw new NotImplementedException(); }
+	}
+
+	public SearchMode StateNextStrategy(char[,] maze, SearchMode searchMode, int x, int y, int w, int h)
+	{
+		throw new NotImplementedException();
+	}
+
+	public string FindNextMove(char[,] maze, int x, int y, int w, int h)
+	{
+		throw new NotImplementedException();
+	}
+}
+
+class GoHomeClass
+	: IStrategy
+{
+	public SearchMode CurrentStrategyClassification
+	{
+		get { throw new NotImplementedException(); }
+	}
+
+	public SearchMode StateNextStrategy(char[,] maze, SearchMode searchMode, int x, int y, int w, int h)
+	{
+		throw new NotImplementedException();
+	}
+
+	public string FindNextMove(char[,] maze, int x, int y, int w, int h)
+	{
+		throw new NotImplementedException();
+	}
+}
+#endregion
+
+
+class Player
+{
+	static IStrategy ControlRoomSearchStrategy		= new SearchClass();
+	static IStrategy ControlRoomApproachStrategy	= new ApproachClass();
+	static IStrategy ReturnStrategy					= new GoHomeClass();
+
+	static IStrategy CurrentStrategy				= null;
+
+	static void UpdateCurrentStrategy(SearchMode searchMode)
+	{
+		switch (searchMode)
+		{
+		case SearchMode.Heading:
+			CurrentStrategy = ControlRoomApproachStrategy;
+			break;
+
+		case SearchMode.Returning:
+			CurrentStrategy = ReturnStrategy;
+			break;
+
+		case SearchMode.Searching:
+			CurrentStrategy = ControlRoomSearchStrategy;
+			break;
+
+		default:
+			throw new ArgumentOutOfRangeException("Invalide search strategy has been selected.");
+		}
+	}
 
 	static void Main(string[] args)
 	{
@@ -82,7 +138,7 @@ class Player
 
 		// game loop
 		char[,] maze = new char[rowCount, columnCount];
-		CurrentMode searchMode = CurrentMode.Searching;
+		SearchMode searchMode = SearchMode.Searching;
 
 		while (true)
 		{
@@ -105,7 +161,12 @@ class Player
 
 			// Write an action using Console.WriteLine()
 			// To debug: Console.Error.WriteLine("Debug messages...");
-			string nextMove = FindNextMove(maze, ref searchMode, currentColumn, currentRow, columnCount, rowCount);
+
+			searchMode = CurrentStrategy.StateNextStrategy(maze, CurrentStrategy.CurrentStrategyClassification, currentColumn, 
+														   currentRow, columnCount, rowCount);
+			UpdateCurrentStrategy(searchMode);
+
+			string nextMove = CurrentStrategy.FindNextMove(maze, currentColumn, currentRow, columnCount, rowCount);
 
 			Console.WriteLine(nextMove); // Kirk's next move (UP DOWN LEFT or RIGHT).
 		}
