@@ -2,7 +2,11 @@
 */bin/*
 */obj/*
 */Debug/*
+*/ipch/*
 *.suo
+*.opensdf
+*.sdf
+
 
 # Windows image file caches
 Thumbs.db
