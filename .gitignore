@@ -1,6 +1,7 @@
 # Visual Studio
 */bin/*
 */obj/*
+*/Debug/*
 *.suo
 
 # Windows image file caches
